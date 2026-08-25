@@ -1,7 +1,7 @@
 export const users = {
     user1: {
         username: 'shaikrabbani876@gmail.com',
-        password: 'Wml@12345'
+        password: 'Wml@123456'
     },
     user2:{
         username:'wml@wmltech.com',

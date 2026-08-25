@@ -16,7 +16,6 @@ export class Discount{
          this.Haveacodebutton = page.getByRole('button', { name: 'Have a code?' })
          this.Entercod = page.getByRole('textbox')
          this.Applybutton = page.getByText('Apply')
-
     }
     async applyDiscountCode(code: string) {
         await this.BrowseProgrammes.click();
@@ -29,7 +28,7 @@ export class Discount{
         await this.Entercod.fill('Test 500');
         //await this.page.waitForTimeout(6000);
         await this.Applybutton.click();
-         await this.page.waitForTimeout(6000);
+         //await this.page.waitForTimeout(6000);
 
     }
 }
