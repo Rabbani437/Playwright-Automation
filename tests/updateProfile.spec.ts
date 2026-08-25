@@ -10,7 +10,7 @@ test('Update profile', async ({ page }) => {
     'Wml@12345'
   );
   await profilePage.updateProfile(
-    'Rabbu876@gmail.com',
+    'Rabbu0000@gmail.com',
     '8143586142',
     'inkollu',
     'inkollu',

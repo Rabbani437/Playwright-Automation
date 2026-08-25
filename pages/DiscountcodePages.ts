@@ -21,9 +21,13 @@ export class Discount{
     async applyDiscountCode(code: string) {
         await this.BrowseProgrammes.click();
         await this.coursename.click();
+        await this.page.waitForTimeout(6000);
         await this.Enrollnowbutton.click();
+        await this.page.waitForTimeout(6000);
         await this.Haveacodebutton.click();
+        await this.page.waitForTimeout(6000);
         await this.Entercod.fill('Test 500');
+        //await this.page.waitForTimeout(6000);
         await this.Applybutton.click();
          await this.page.waitForTimeout(6000);
 

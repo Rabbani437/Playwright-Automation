@@ -47,9 +47,9 @@ export class updateProfile {
   await this.pincode.fill(pincode);
   await this.GSTIN.fill(GSTIN);
   //await this.State.selectOption({ label:'AP'});
+  
   await this.State.click();
   await this.page.getByRole('option', { name: 'Andhra Pradesh', exact: true }).click();
-
   await this .District.click();
   await this.District.fill('BAPATLA');
   await this.page.getByRole('option', { name: 'BAPATLA', exact: true }).click();

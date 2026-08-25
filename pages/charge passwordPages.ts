@@ -12,7 +12,7 @@ export class ChargePasswordPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.profileDropdown = page.getByRole('button', { name: /Trainee$/ });
+        this.profileDropdown = page.getByRole('button', { name: /Trainee/ });
         this.profile = page.getByRole('link', { name: 'Profile' });
         this.AccountInformation = page.getByRole('button', { name: 'Account Information' })
          this.changePasswordLink = page.getByRole('button', { name: 'Change Password' });
