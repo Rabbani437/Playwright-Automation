@@ -28,7 +28,7 @@ export class Discount{
         await this.Entercod.fill('Test 500');
         //await this.page.waitForTimeout(6000);
         await this.Applybutton.click();
-         //await this.page.waitForTimeout(6000);
+         await this.page.waitForTimeout(6000);
 
     }
 }

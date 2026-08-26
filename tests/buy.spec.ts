@@ -8,8 +8,8 @@ test('User should be able to buy a course successfully', async ({ page }) => {
      const loginPage = new LoginPage(page);
          await page.goto('/signin');
         await loginPage.login(
-            users.user1.username,
-            users.user1.password
+            users.user2.username,
+            users.user2.password
         );
     await courseBuyPage.buyCourse();
     });
